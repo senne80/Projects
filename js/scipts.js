@@ -1,20 +1,27 @@
 const txtArea = document.querySelector('#txtArea');
 const lblFeedback = document.querySelector('#lblFeedback');
-const btn = document.querySelector('button');
-let counter;
-let chars = [];
+const btnCountAll = document.querySelector('#btnCountAll');
+const btnCountLetters = document.querySelector('#btnCountLetters');
 
-function berekenAantalCharacters(e)
-{
-    counter = 0;
-    chars = [];
-    e.preventDefault();
-    for ( let c of txtArea.value) {
-        chars.push(c);
-        counter++;
-    }
-    lblFeedback.textContent = counter;
-    console.log(chars.length);
+function berekenAantalCharacters(inputText) {
+    return inputText.length;
 }
 
-btn.addEventListener('click', berekenAantalCharacters);
+function berekenAantalLetters(inputText) {
+    const lettersOnly = inputText.replace(/[^\w]/g, '');
+    return lettersOnly.length;
+}
+
+btnCountAll.addEventListener('click', function(e) {
+    e.preventDefault();
+    const inputText = txtArea.value;
+    const counter = berekenAantalCharacters(inputText);
+    lblFeedback.textContent = `Number of characters: ${counter}`;
+});
+
+btnCountLetters.addEventListener('click', function(e) {
+    e.preventDefault();
+    const inputText = txtArea.value;
+    const counter = berekenAantalLetters(inputText);
+    lblFeedback.textContent = `Number of letters: ${counter}`;
+});

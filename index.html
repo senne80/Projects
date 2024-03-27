@@ -10,11 +10,16 @@
     <h1 class="hoofding">CHARACTER COUNTER</h1>
     <main>
         <div class="inputArea">
-            <textarea id="txtArea"></textarea>
+            <textarea id="txtArea" placeholder="Enter your text here..."></textarea>
+            <div class="buttonContainer">
+                <button type="button" id="btnCountAll">COUNT ALL CHARACTERS</button>
+                <button type="button" id="btnCountLetters">COUNT ONLY LETTERS</button>
+            </div>
+            <div class="lblFeedbackContainer">
+                <p id="lblFeedback"></p>
+            </div>
         </div>
-        <button type="button">COUNT ALL CHARACTERS</button>
     </main>
-    <p id="lblFeedback"></p>
     <script src="js/scipts.js"></script>
 </body>
 </html>
