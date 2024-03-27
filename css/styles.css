@@ -1,11 +1,33 @@
-.hoofding
-{
+.hoofding {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
     background-color: bisque;
     margin: 0;
-    justify-content: center;
+    height: 100px; /* Assuming desired height */
 }
 
 body
 {
-background-color: beige;
+    background-color: beige;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+#txtArea {
+    justify-content: end;
+    width: 550px;
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.inputArea
+{
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    min-height: 200px; /* Ensure body takes full height of viewport */
 }
