@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Typeracer</title>
+</head>
+
+<body>
+   <header>
+      <div>
+         <img src="images/menu.jpg" alt="menu item" class="imgHidden" id="imgMenu">
+      <button type="button" id="btnLogUit" class="hidden">Log Uit</button>
+      </div>
+      <h1 class="titel">TYP TOP</h1>
+      <div id="userContainer">
+         <div id="infoContainer">
+            <p id="username" class="hidden"></p>
+            <p id="locatie" class="hidden"></p>
+         </div>
+         <img id="imgGravatar" src="https://gravatar.com/avatar/.json" alt="profielfoto" class="imgHidden">
+      </div>
+   </header>
+   <main>
+      <form id="frm" class="startscherm">
+         <input id="inpEmail" type="email" placeholder="john.doe@student.odisee.be">
+         <button id="btnSubmit" type="submit">Log in</button>
+      </form>
+      <p id="lblGravatarFeedback" class="hidden">Gelieve met een geldig email adres in te loggen.</p>
+      <div class="stopwatch hidden" id="stopwatch">0</div>
+      <div id="txtTekst" class="hidden" inert>
+      </div>
+      <textarea id="inpTekst" class="hidden"></textarea>
+      <div>
+         <p id="lblFeedback" class="hidden">EINDE SPEL</p>
+         <p id="lblKies" class="hidden">KIES EEN SPEL:</p>
+         <p id="lblHighscore" class="hidden">JOUW HIGHSCORES:</p>
+      </div>
+      <button type="button" id="btnStop" class="hidden">STOP</button>
+      <button type="button" id="btnOpnieuw" class="hidden">OPNIEUW</button>
+      <button type="button" id="btnOrigineel" class="hidden">ORIGINEEL SPEL</button>
+      <button type="button" id="btnRace" class="hidden">RACE TEGEN DE KLOK</button>
+      <button type="button" id="btnZieHighscore" class="hidden">TOON HIGHSCORES</button>
+      <div id="score" class="hidden">
+         <p id="aantalFouten">Aantal fouten: </p>
+         <p id="foutpercentage">Foutenpercentage: </p>
+         <p id="totaleTijd">Totale tijd: </p>
+         <p id="prestatiescore">Totale score: </p>
+      </div>
+      <p id="lblOrig" class="ondertitel hidden">ORIGINEEL:</p>
+      <div id="tableHigh" class="tableHigh">
+         <table id="tableHighscore" class="hidden tableHighscore">
+            <thead>
+               <tr>
+                  <td>Plaats</td>
+                  <td>Naam</td>
+                  <td>Score</td>
+                  <td>Foutpercentage</td>
+                  <td>Tijd</td>
+                  <td>Datum</td>
+               </tr>
+            </thead>
+            <tbody id="tbodyHighscore" class="tbodyHighscore">
+            </tbody>
+         </table>
+      </div>
+      <p id="lblRace" class="ondertitel hidden">RACE TEGEN DE KLOK:</p>
+      <div id="tableHighRace" class="tableHigh">
+         <table id="tableHighscoreRace" class="hidden tableHighscore">
+            <thead>
+               <tr>
+                  <td>Plaats</td>
+                  <td>Naam</td>
+                  <td>Score</td>
+                  <td>Tijd Over</td>
+                  <td>Datum</td>
+               </tr>
+            </thead>
+            <tbody id="tbodyHighscoreRace" class="tbodyHighscore">
+            </tbody>
+         </table>
+      </div>
+      <button id="btnTerug" type="button" class="hidden">TERUG</button>
+   </main>
+   <audio src="sounds/klik.mp3" id="juisteAntwoord"></audio>
+   <audio src="sounds/error2.mp3" id="fouteAntwoord"></audio>
+   <script src="js/scripts.js"></script>
+</body>
+
+</html>
