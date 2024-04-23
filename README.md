@@ -12,3 +12,6 @@ I implemented a second game as a free add-on we needed to implement. This game i
 There is also a page for seeing your highscores in both games wich are stored in localstorage.
 
 Test it here: https://senne80.github.io/Projects/TypTop
+
+## PartyMap
+Work in progress.
