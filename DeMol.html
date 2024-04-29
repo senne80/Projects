@@ -15,6 +15,17 @@
         <input type="text" class="form__field" placeholder="Voornaam" name="name" id="inpName" required><br><br>
         <button type="button" id="btnNext" class="button-6">Volgende</button>
         <p id="test"></p>
+
+        <form class="questionContainer hidden">
+                <p>Waar was de mol?</p>
+                <input type="radio" id="plaats1" value="water" name="plaats">
+                <label for="question1">De mol zat in het water</label>
+                <input type="radio" id="plaats2" value="walkie" name="plaats">
+                <label for="question2">De mol had de walkie talkie</label>
+                <input type="radio" id="plaats3" value="kerker" name="plaats">
+                <label for="question3">De mol was in de kerker</label>
+            <button type="submit">KLAAR</button>
+        </form>
     </main>
     <script src="js/DeMolScript.js"></script>
 </body>
