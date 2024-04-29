@@ -1,0 +1,44 @@
+body
+{
+    color: wheat;
+    background-color: black;
+    text-align: center;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.button-6 
+{
+    width: 135px;
+    height: 45px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+    margin-top: 10px;
+}
+
+.form__label
+{
+    margin-bottom: 20px;
+}
+
+.form__field
+{
+    border: purple;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.homescreen
+{
+    margin-top: 15em;
+}
+
